@@ -39,8 +39,8 @@ iOS
 React
 ///-->
 
-<!--dropdown for notification icon that shows messages-->
-<!--toggle  feature for avatar image, green online, grey for offline on click-->
+<!--dropdown for notification icon that shows messages//-->
+<!--toggle  feature for avatar image, green online, grey for offline on click//-->
 <!--tooltip "add to bookmarks' mouse over bookmark icon in card-->
 <!--carousel feature for cards, total 8 cards, 4 displayed at a time-->
 
@@ -89,9 +89,9 @@ React
             </form>
         </div>
     </div>
-    <div class="dropdown-center ">
+    <div class="dropdown">
       <button class="btn" id="notifDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-bell fa-xl"></i></button>
-      <ul class="dropdown-menu" aria-labelledby="notifDropdown">
+      <ul class="dropdown-menu p-4 m-3" aria-labelledby="notifDropdown">
         <li><a class="dropdown-item" href="#">
           <p class="fw-bold">Notif title</p>
           <p> Notification desc</p>
@@ -111,25 +111,17 @@ React
 
       </ul>
     </div>
-    <img class="border border-secondary rounded-circle mx-1" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F5a7-Xqt5Dvc%2Fmaxresdefault.jpg&f=1&nofb=1&ipt=ef6e92075307e748177f5217e5f034f396797449340f0b1101f0e4fd34d63bbf&ipo=images"  width="50" height="50" style="object-fit: cover">
+    <button class="btn" id="pfpButton">
+      <img class="border border-5 border-success rounded-circle mx-1" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F5a7-Xqt5Dvc%2Fmaxresdefault.jpg&f=1&nofb=1&ipt=ef6e92075307e748177f5217e5f034f396797449340f0b1101f0e4fd34d63bbf&ipo=images" id="pfp" width="50" height="50" style="object-fit: cover">
+    </button>
+
 
   </div>
 </nav>
-<script>
-  var tags = ["HTML", "CSS", "PHP", "JavaScript", "Python", "Java", "iOS", "React"]
-  $("#searchBar").autocomplete({
-    source: tags
-  });
-</script>
+
 
 <!--autocomplete search boc containing tags in tags.js -->
 
-<script>
-  var tags = ["HTML", "CSS", "PHP", "JavaScript", "Python", "Java", "iOS", "React"]
-  $("#searchBar").autocomplete({
-    source: tags
-  });
-</script>
 
 
 <!-- TODO: Hero:
@@ -223,84 +215,211 @@ Welcome to SOI Learning Portal
 </div>
 
 
-
-<div class="container-fluid p-3 mx-auto align-items-stretch align-content-center">
-  <div class="row g-5 m-3">
     <!--TODO:card 1:
- Introduction to HTML and CSS
-   2h 30m
-   Hannah Lim-->
-    <div class="col-12 col-md-6 col-lg-3 d-flex">
-      <div class="card border-primary text-white bg-dark">
-        <img class="card-img-top img-fluid h-50" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.seoclerk.com%2Fpics%2F523331-1e2qQI1490977998.jpg&f=1&nofb=1&ipt=e64579f1d1c9480c280ccc79d61c5d78fe948cf578dba7cf9049263b89c26b9a&ipo=images">
-        <div class="card-body h-50">
-          <h5 class="card-title">Introduction to HTML and CSS</h5>
-          <p class="card-text">2h 30m</p>
-          <a href="http://placehold.it" class="btn btn-primary">Join</a>
+    Introduction to HTML and CSS
+        2h 30m
+        Hannah Lim-->
+
+<div class="container text-center my-3">
+  <h2 class="font-weight-light">Bootstrap Multi Slide Carousel</h2>
+  <div class="row mx-auto my-auto justify-content-center">
+    <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner row" role="listbox">
+        <div class="carousel-item active">
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-img">
+                <img src="//via.placeholder.com/500x400/31f?text=1" class="img-fluid">
+              </div>
+              <div class="card-img-overlay">Slide 1</div>
+            </div>
+          </div>
         </div>
-        <div class="card-footer">
-          Hannah Lim
+        <div class="carousel-item">
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-img">
+                <img src="//via.placeholder.com/500x400/e66?text=2" class="img-fluid">
+              </div>
+              <div class="card-img-overlay">Slide 2</div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-img">
+                <img src="//via.placeholder.com/500x400/7d2?text=3" class="img-fluid">
+              </div>
+              <div class="card-img-overlay">Slide 3</div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-img">
+                <img src="//via.placeholder.com/500x400?text=4" class="img-fluid">
+              </div>
+              <div class="card-img-overlay">Slide 4</div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-img">
+                <img src="//via.placeholder.com/500x400/aba?text=5" class="img-fluid">
+              </div>
+              <div class="card-img-overlay">Slide 5</div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-img">
+                <img src="//via.placeholder.com/500x400/fc0?text=6" class="img-fluid">
+              </div>
+              <div class="card-img-overlay">Slide 6</div>
+            </div>
+          </div>
         </div>
       </div>
+      <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
     </div>
-    <!--TODO:card 2:
-User Experience and Interface Design
-  2h 45m
-  Julia Lee-->
-    <div class="col-12 col-md-6 col-lg-3 d-flex">
-      <div class="card border-primary text-white bg-dark">
-        <img class="card-img-top img-fluid h-50" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.techsmashable.com%2Fwp-content%2Fuploads%2F2020%2F07%2Fuser-interface-design.jpeg&f=1&nofb=1&ipt=515b3ac4665152f42c2056bf3a4ebe9820b587bd40b25717d8c90f4220bd73fc&ipo=images">
-        <div class="card-body h-50">
-          <h5 class="card-title">User Experience and Interface Design</h5>
-          <p class="card-text">2h 45m</p>
-          <a href="http://placehold.it" class="btn btn-primary">Join</a>
-        </div>
-        <div class="card-footer">
-          Julia Lee
-        </div>
-      </div>
-    </div>
-    <!--TODO:card 3:
-iOS App Development using Xcode and Swift
-  4h 30m
-  Ryan Low-->
-
-
-    <!--TODO:card 4:
-Front-end JavaScript Frameworks
-  3h 45m
-  Azhar Kamar-->
-    <div class="col-12 col-md-6 col-lg-3 d-flex">
-      <div class="card border-primary text-white bg-dark">
-        <img class="card-img-top img-fluid h-50" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Fwww.techomoro.com%2Fwp-content%2Fuploads%2F2019%2F11%2Fjavascript-736400-1.png%3Ffit%3D1854%252C941%26ssl%3D1&f=1&nofb=1&ipt=de66debe574c78eeccc286c0b3b67fa80df059bf82999f28b243f76969540983&ipo=images">
-        <div class="card-body h-50">
-          <h5 class="card-title">Front-end JavaScript Frameworks</h5>
-          <p class="card-text">3h 45m</p>
-          <a href="http://placehold.it" class="btn btn-primary">Join</a>
-        </div>
-        <div class="card-footer">
-          Azhar Kamar
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-md-6 col-lg-3 d-flex">
-      <div class="card border-primary text-white bg-dark">
-        <img class="card-img-top img-fluid h-50" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.intego.com%2Fmac-security-blog%2Fwp-content%2Fuploads%2F2021%2F05%2Fxcode-icon-600.png&f=1&nofb=1&ipt=f3150de023ed454198a35f191065d6865b42b016760000bd69d3319d15899886&ipo=images">
-        <div class="card-body h-50">
-          <h5 class="card-title">iOS App Development using Xcode and Swift</h5>
-          <p class="card-text">4h 30m</p>
-          <a href="http://placehold.it" class="btn btn-primary">Join</a>
-        </div>
-        <div class="card-footer">
-          Ryan Low
-        </div>
-      </div>
-    </div>
-
   </div>
+  <h5 class="mt-2 fw-light">advances one slide at a time</h5>
 </div>
 
+
+<!--<div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active"><
+        <div id="card1" class="card border-primary text-white bg-dark" >
+          <img class="card-img-top img-fluid h-50" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.seoclerk.com%2Fpics%2F523331-1e2qQI1490977998.jpg&f=1&nofb=1&ipt=e64579f1d1c9480c280ccc79d61c5d78fe948cf578dba7cf9049263b89c26b9a&ipo=images">
+          <div class="card-body h-50">
+            <h5 class="card-title">Introduction to HTML and CSS</h5>
+            <p class="card-text">2h 30m</p>
+            <a href="http://placehold.it" class="btn btn-primary">Join</a>
+          </div>
+          <div class="card-footer">
+            Hannah Lim
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item active">
+        <div id="card2" class="card border-primary text-white bg-dark">
+          <img class="card-img-top img-fluid h-50" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.techsmashable.com%2Fwp-content%2Fuploads%2F2020%2F07%2Fuser-interface-design.jpeg&f=1&nofb=1&ipt=515b3ac4665152f42c2056bf3a4ebe9820b587bd40b25717d8c90f4220bd73fc&ipo=images">
+          <div class="card-body h-50">
+            <h5 class="card-title">User Experience and Interface Design</h5>
+            <p class="card-text">2h 45m</p>
+            <a href="http://placehold.it" class="btn btn-primary">Join</a>
+          </div>
+          <div class="card-footer">
+            Julia Lee
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item active">
+        <div id="card3" class="card border-primary text-white bg-dark">
+          <img class="card-img-top img-fluid h-50" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Fwww.techomoro.com%2Fwp-content%2Fuploads%2F2019%2F11%2Fjavascript-736400-1.png%3Ffit%3D1854%252C941%26ssl%3D1&f=1&nofb=1&ipt=de66debe574c78eeccc286c0b3b67fa80df059bf82999f28b243f76969540983&ipo=images">
+          <div class="card-body h-50">
+            <h5 class="card-title">Front-end JavaScript Frameworks</h5>
+            <p class="card-text">3h 45m</p>
+            <a href="http://placehold.it" class="btn btn-primary">Join</a>
+          </div>
+          <div class="card-footer">
+            Azhar Kamar
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item active">
+        <div id="card4"class="card border-primary text-white bg-dark">
+          <img class="card-img-top img-fluid h-50" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.intego.com%2Fmac-security-blog%2Fwp-content%2Fuploads%2F2021%2F05%2Fxcode-icon-600.png&f=1&nofb=1&ipt=f3150de023ed454198a35f191065d6865b42b016760000bd69d3319d15899886&ipo=images">
+          <div class="card-body h-50">
+            <h5 class="card-title">iOS App Development using Xcode and Swift</h5>
+            <p class="card-text">4h 30m</p>
+            <a href="http://placehold.it" class="btn btn-primary">Join</a>
+          </div>
+          <div class="card-footer">
+            Ryan Low
+          </div>
+        </div>
+      </div>
+
+
+      <div class="carousel-item active">
+        <div id="card5" class="card border-primary text-white bg-dark">
+          <img class="card-img-top img-fluid h-50" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.seoclerk.com%2Fpics%2F523331-1e2qQI1490977998.jpg&f=1&nofb=1&ipt=e64579f1d1c9480c280ccc79d61c5d78fe948cf578dba7cf9049263b89c26b9a&ipo=images">
+          <div class="card-body h-50">
+            <h5 class="card-title">Introduction to HTML and CSS</h5>
+            <p class="card-text">2h 30m</p>
+            <a href="http://placehold.it" class="btn btn-primary">Join</a>
+          </div>
+          <div class="card-footer">
+            Hannah Lim
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item active">
+        <div id="card6" class="card border-primary text-white bg-dark">
+          <img class="card-img-top img-fluid h-50" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.techsmashable.com%2Fwp-content%2Fuploads%2F2020%2F07%2Fuser-interface-design.jpeg&f=1&nofb=1&ipt=515b3ac4665152f42c2056bf3a4ebe9820b587bd40b25717d8c90f4220bd73fc&ipo=images">
+          <div class="card-body h-50">
+            <h5 class="card-title">User Experience and Interface Design</h5>
+            <p class="card-text">2h 45m</p>
+            <a href="http://placehold.it" class="btn btn-primary">Join</a>
+          </div>
+          <div class="card-footer">
+            Julia Lee
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item active">
+        <div id="card7" class="card border-primary text-white bg-dark">
+          <img class="card-img-top img-fluid h-50" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Fwww.techomoro.com%2Fwp-content%2Fuploads%2F2019%2F11%2Fjavascript-736400-1.png%3Ffit%3D1854%252C941%26ssl%3D1&f=1&nofb=1&ipt=de66debe574c78eeccc286c0b3b67fa80df059bf82999f28b243f76969540983&ipo=images">
+          <div class="card-body h-50">
+            <h5 class="card-title">Front-end JavaScript Frameworks</h5>
+            <p class="card-text">3h 45m</p>
+            <a href="http://placehold.it" class="btn btn-primary">Join</a>
+          </div>
+          <div class="card-footer">
+            Azhar Kamar
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item active">
+        <div id="card8" class="card border-primary text-white bg-dark">
+          <img class="card-img-top img-fluid h-50" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.intego.com%2Fmac-security-blog%2Fwp-content%2Fuploads%2F2021%2F05%2Fxcode-icon-600.png&f=1&nofb=1&ipt=f3150de023ed454198a35f191065d6865b42b016760000bd69d3319d15899886&ipo=images">
+          <div class="card-body h-50">
+            <h5 class="card-title">iOS App Development using Xcode and Swift</h5>
+            <p class="card-text">4h 30m</p>
+            <a href="http://placehold.it" class="btn btn-primary">Join</a>
+          </div>
+          <div class="card-footer">
+            Ryan Low
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>-->
 
 
 <footer class="d-flex justify-content-around">
@@ -321,6 +440,38 @@ Privacy
 Terms
 Feedback
 Support-->
+
+<script>
+  $(document).ready(function () {
+
+    /*let items = document.querySelectorAll('.carousel .carousel-item')
+
+    items.forEach((el) => {
+      // number of slides per carousel-item
+      const minPerSlide = 4
+      let next = el.nextElementSibling
+      for (var i=1; i<minPerSlide; i++) {
+        if (!next) {
+          // wrap carousel by using first child
+          next = items[0]
+        }
+        let cloneChild = next.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next = next.nextElementSibling
+      }
+    })*/
+
+
+    var tags = ["HTML", "CSS", "PHP", "JavaScript", "Python", "Java", "iOS", "React"]
+    $("#searchBar").autocomplete({
+      source: tags
+    });
+
+    $("#pfpButton").click(function () {
+      $("#pfp").toggleClass("border-secondary").toggleClass("border-success");
+    });
+  });
+</script>
 </body>
 </html>
 
